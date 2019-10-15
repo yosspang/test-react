@@ -8,9 +8,14 @@ import {
   StatusBar,
 } from 'react-native';
 
-const AppStatles = () =>(
+const AppStatles = (props) =>(
     <View>
-        <Text>Hello World Stateless tester 123</Text>
+        <Text>Contoh Stateless props</Text>
+        <Text>Nama: {props.nama}</Text>
+        <Text>Alamat: {props.alamat}</Text>
+        <Text>Telp: {props.telp}</Text>
+        <Text>Email: {props.email}</Text>
+        <Text></Text>
     </View>
 )
 

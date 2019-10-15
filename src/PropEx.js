@@ -1,7 +1,7 @@
 import{View,Text} from 'react-native';
 import React from 'react';
 
-export default class PropEx extends React.Component{
+/* export default class PropEx extends React.Component{
     render(){
         return(
             <View>
@@ -15,4 +15,21 @@ export default class PropEx extends React.Component{
             </View>
         );
     }
-}
+} */
+
+function PropEx(props){
+    return(
+            <View>
+                <Text>Contoh 1x manggil Props</Text>
+                <Text> Nama : {props.nama}</Text>
+                <Text> Alamat : {props.alamat}</Text>
+                <Text> Telp : {props.telp}</Text>
+                <Text> Email: {props.email}</Text>
+                <Text></Text>
+                
+            </View>
+    )
+};
+
+
+export default PropEx;
